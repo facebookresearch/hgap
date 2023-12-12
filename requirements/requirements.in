@@ -1,0 +1,35 @@
+-f https://download.pytorch.org/whl/cu116
+torch==1.13.1
+xformers==0.0.16
+rotary-embedding-torch
+absl-py
+opt-einsum
+flatbuffers
+gym==0.21.0
+mujoco-py==2.1.2.14
+numpy<1.24.0
+matplotlib
+typed-argument-parser
+d4rl @ git+https://github.com/JannerM/d4rl.git@c3dd04da02acbf4de6cbaa1141deb4f958f03ca9
+scikit-image
+scikit-video
+gitpython
+einops==0.4.1
+mjrl @ git+https://github.com/aravindr93/mjrl@3871d93763d3b49c4741e6daeaebbc605fe140dc
+wandb
+dm_control==1.0.2
+stable_baselines3
+
+absl-py
+mujoco==2.1.5
+dm-env
+dm-tree
+tensorflow==2.11.1
+# tensorflow_datasets
+rlds
+h5py
+chex
+pandas
+cython<3
+
+accelerate==0.18.0
