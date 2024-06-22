@@ -62,7 +62,7 @@ class Block(nn.Module):
         self.kv_cache = kv_cache
         self.attention_mask = torch.ones((sequence_length, sequence_length), device="cuda")
         if causal:
-            self.attention_mask = torch.tril(self.attention_mask)
+            self.attention_mask = torch.triu(self.attention_mask,diagonal=1)*(-1e9)
 
     def forward(self, x, kv_cache=None):
         # pad input to sequence length
